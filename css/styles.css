@@ -185,6 +185,7 @@ body {
     letter-spacing: 0.06em;
     background-color: var(--accent-color);
     color: var(--text-color-white);
+    border-radius: 4px;
     border: 0;
 }
 .btn-modal-window:hover,
@@ -209,14 +210,12 @@ body {
 }
 .value-list-icon-box {
     display: flex;
+    height: 120px;
     background-color: #F5F4FA;
     border-radius: 4px;
     margin-bottom: 30px;
     justify-content: center;
     align-items: center; 
-}
-.icon-antenna {
-    height: 120px;
 }
 .value-name {
     font-size: 14px;
@@ -306,7 +305,7 @@ margin-right: 30px;
     color: var(--primery-text-color);
 }
 .icon-social-link {
-    fill: currentColor;
+    fill: #AFB1B8;
 }
 .social-link:hover, .social-link:focus {
     background-color: var(--accent-color);
@@ -320,20 +319,24 @@ margin-right: 30px;
 
 .clients-list {
     display: flex;
-    width: 1170px;
-    justify-content: space-between;
+}
+.client-list-item {
+    width: calc((100% - 30px*5)/6);
+    margin-right: 30px;
 }
 .client-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
+.client-list-item:last-child {
+    margin-right: 0;
+}
 .icon-client {
-    fill: var(--primery-text-color);
+    fill: #AFB1B8;
 }
 .client-link:hover,
 .client-link:focus {
@@ -393,7 +396,8 @@ margin-right: 30px;
 .project {
     width: calc((100% - 30px*2)/3);
 }
-.project:hover {
+.project-link:hover {
+    display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /* --Підписи проектів-- */
@@ -429,11 +433,9 @@ margin-right: 30px;
 .footer-items {
     display: flex;
     justify-content: left;
-    /* align-items: flex-start; */
-    /* flex-direction: column; */
-
 }
 .logo-bottom {
+    display: block;
     text-decoration: none;
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -472,17 +474,18 @@ margin-right: 30px;
 }
 .footer-social-links {
     margin-left: 70px;
-    margin-top: 7px;
+    margin-top: 12px;
 }
 .social-links-header {
+    display: block;
     font-size: 14px;
-        font-weight: 700;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: var(--text-color-white);
-    
-        margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-color-white);
+
+    margin-bottom: 10px;
 }
 .footer-socisl-link-list {
     display: flex;
